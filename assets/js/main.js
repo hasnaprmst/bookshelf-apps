@@ -65,7 +65,7 @@ function makeBookShelf(bookObject) {
     moveButton.classList.add('green');
     moveButton.addEventListener('click', function() {
         if (bookObject.isCompleted) {
-            removeBook(bookObject.id);
+            moveBook(bookObject.id);
         } else {
             addBookToCompleted(bookObject.id);
         }
@@ -134,6 +134,15 @@ function findBook (bookId) {
         }
     }
     return null;
+}
+
+function moveBook (bookId) {
+    const bookTarget = findBook(bookId);
+
+    if (bookId == null) return;
+
+    bookTarget.isCompleted = false;
+    document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
 function removeBook (bookId) {
