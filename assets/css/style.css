@@ -169,3 +169,31 @@ main {
     background-color: darkred;
     color: white;
 }
+
+/* Tombol berwarna hijau */
+.green {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white; /* Warna teks putih */
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Tombol berwarna merah */
+.red {
+    background-color: #F44336; /* Warna merah */
+    color: white; /* Warna teks putih */
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
